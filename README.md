@@ -1,4 +1,4 @@
-Twitter-tts
+Twitter-processing
 ===========
 
-Convert a live twitter stream into sound with Node.js and text-to-speech
+Receive Tweets from the Twitter Streaming API and process them using custom processors.
