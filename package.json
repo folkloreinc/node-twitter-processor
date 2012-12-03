@@ -17,7 +17,7 @@
         "type": "git",
         "url": "git://github.com/Folkloreatelier/twitter-processing.git"
     },
-	"licenses": {
+	"license": {
 		"type": "MIT",
 		"url": "http://github.com/Folkloreatelier/twitter-processing/raw/master/LICENSE"
 	}
