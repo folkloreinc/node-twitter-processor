@@ -1,17 +1,24 @@
 {
 	"name": "twitter-processing",
 	"description" : "Twitter streaming processing",
-    "keywords" : [ "twitter", "streaming", "nwtitter" ],
-	"author": "David Mongeau-Petitpas <dmp@atelierfolklore.ca>",
+    "keywords" : ["twitter", "streaming", "nwtitter"],
+	"author": {
+		"name" : "David Mongeau-Petitpas",
+		"email" : "dmp@atelierfolklore.ca"
+	},
 	"version": "0.0.1",
 	"dependencies": {
 		"kue" : "0.5.x",
 		"ntwitter" : "0.5.x",
 		"redis" : "0.8.x"
 	},
-	"main": "./index.js",
+	"main": "index.js",
     "repository": {
         "type": "git",
         "url": "git://github.com/Folkloreatelier/twitter-processing.git"
-    }
+    },
+	"licenses": {
+		"type": "MIT",
+		"url": "http://github.com/Folkloreatelier/twitter-processing/raw/master/LICENSE"
+	}
 }
