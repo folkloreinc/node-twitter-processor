@@ -33,7 +33,7 @@ var TwitterProcessing = function(options) {
 			'track' : ['twitter']
 		},
 		'pauseTimeout' : 5000,
-		'queueName' : 'twitter_processing'
+		'queueName' : 'twitter_processing_'
 	},options);
 
 	//Server
@@ -76,9 +76,6 @@ TwitterProcessing.prototype.createQueue = function() {
 		if(self.options.redis.password) {
 	    	client.auth(self.options.redis.password);
 		}
-		client.flushdb(function() {
-
-		});
 		return client;
 	};
 	var jobs = kue.createQueue();
@@ -123,7 +120,7 @@ TwitterProcessing.prototype.init = function() {
 
 			job.remove(function(err){
 				if(self.options.debug) {
-					console.log('Kue: Removing job', job.data.text);
+					console.log('Kue: Removing job', err, job.data.text);
 				}
 				if(self.jobsCount == 0) {
 					self.isProcessing = false;

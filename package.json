@@ -2,11 +2,11 @@
 	"name": "twitter-processing",
 	"description" : "Twitter streaming processing",
     "keywords" : ["twitter", "streaming", "nwtitter"],
-	"author": {
-		"name" : "David Mongeau-Petitpas",
-		"email" : "dmp@atelierfolklore.ca"
-	},
-	"version": "0.0.1",
+    "author": "Folklore <info@atelierfolklore.ca>",
+    "maintainers": [
+        "David Mongeau-Petitpas <dmp@atelierfolklore.ca>"
+    ],
+	"version": "0.0.3",
 	"dependencies": {
 		"kue" : "0.5.x",
 		"ntwitter" : "0.5.x",
