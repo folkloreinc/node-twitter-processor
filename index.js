@@ -18,7 +18,9 @@ var TwitterProcessing = function(options) {
 	//Options
 	this.options = utils.merge({
 		'debug' : false,
-		'processor' : null,
+		'processor' : function(job,done){
+			done();
+		},
 		'redis' : {
 			'host' : '127.0.0.1',
 			'port' : 6379
@@ -244,9 +246,11 @@ TwitterProcessing.prototype.process = function(job,done) {
 
 	if(!this.processor) done();
 
-	this.processor.process(job,function() {
-		job.save(done);
-	});
+	if(this.processor) {
+		this.processor(job,function() {
+			job.save(done);
+		});
+	}
 	
 	return;
 
