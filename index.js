@@ -22,6 +22,7 @@ var TwitterProcessing = function(options) {
 			done();
 		},
 		'redis' : {
+			'client' : null,
 			'host' : '127.0.0.1',
 			'port' : 6379
 		},
@@ -73,6 +74,9 @@ TwitterProcessing.prototype = Object.create(EventEmitter.prototype);
 TwitterProcessing.prototype.createQueue = function() {
 	var self = this;
 	kue.redis.createClient = function() {
+		if(typeof(self.options.redis.client) != 'undefined' && self.options.redis.client) {
+			return self.options.redis.client;
+		}
 		var redis = require('redis');
 		var client = redis.createClient(self.options.redis.port, self.options.redis.host);
 		if(self.options.redis.password) {
