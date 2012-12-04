@@ -15,10 +15,10 @@
 	"main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git://github.com/Folkloreatelier/twitter-processing.git"
+        "url": "git://github.com/Folkloreatelier/node-twitter-processing.git"
     },
 	"license": {
 		"type": "MIT",
-		"url": "http://github.com/Folkloreatelier/twitter-processing/raw/master/LICENSE"
+		"url": "http://github.com/Folkloreatelier/node-twitter-processing/raw/master/LICENSE"
 	}
 }
