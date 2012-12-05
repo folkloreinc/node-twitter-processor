@@ -1,12 +1,19 @@
 {
 	"name": "twitter-processor",
 	"description" : "Twitter streaming processor",
-    "keywords" : ["twitter", "streaming", "ntwitter", "text processor", "processor"],
-    "author": "Folklore <info@atelierfolklore.ca>",
-    "maintainers": [
-        "David Mongeau-Petitpas <dmp@atelierfolklore.ca>"
+    "keywords" : [
+    	"twitter",
+    	"streaming",
+    	"ntwitter",
+    	"text processor",
+    	"processor"
     ],
-	"version": "0.0.8",
+    "author": "Folklore <info@atelierfolklore.ca>",
+    "contributors": [
+        "David Mongeau-Petitpas <dmp@atelierfolklore.ca>",
+        "François Côté <fc@atelierfolklore.ca>"
+    ],
+	"version": "0.0.8-1",
 	"dependencies": {
 		"ntwitter" : "0.5.x",
 		"queueleuleu" : "0.x"
