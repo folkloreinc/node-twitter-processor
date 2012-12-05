@@ -31,6 +31,6 @@ Usage
 		}
 	});
 
-	processor.on('data',function(tweet) {
+	processor.on('tweet',function(tweet) {
 		console.log(tweet.addedKey); //value
 	});

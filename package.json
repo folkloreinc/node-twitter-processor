@@ -13,7 +13,7 @@
         "David Mongeau-Petitpas <dmp@atelierfolklore.ca>",
         "François Côté <fc@atelierfolklore.ca>"
     ],
-	"version": "0.0.8-1",
+	"version": "0.0.8-2",
 	"dependencies": {
 		"ntwitter" : "0.5.x",
 		"queueleuleu" : "0.x"
