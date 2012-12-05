@@ -4,16 +4,24 @@ var CONFIG = require('./config');
 
 var processor = twitterProcessor.createProcessor({
     'debug' : true,
-    'processor' : function(job,done) {
-        job.data.addedKey = 'value';
-        done();
+    'processor' : function(tweet,done) {
+        tweet.addedKey = 'value';
+        setTimeout(function() {
+            done();
+        },Math.round(Math.random()*3000));
     },
     'twitter' : CONFIG.twitter,
     'filter' : {
-        'track' : 'Twitter'
+        'track' : 'Bieber'
     }
 });
 
-processor.on('tweet', function(tweet) {
-	console.log('Tweet',tweet.text);
+processor.on('add', function(tweet) {
+    //console.log('Tweet added',tweet.text);
 });
+
+processor.on('tweet', function(tweet) {
+	console.log('Tweet processed',tweet.text);
+});
+
+processor.start();

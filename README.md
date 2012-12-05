@@ -1,4 +1,4 @@
-Twitter-processing
+twitter-processor
 ===========
 
 Receive Tweets from the Twitter Streaming API and process them using custom processors.
@@ -6,24 +6,19 @@ Receive Tweets from the Twitter Streaming API and process them using custom proc
 
 Installation
 ---------------
-    npm install twitter-processing
+    npm install twitter-processor
 
 
 Usage
 ---------------
 
-    var twitterProcessing = require('twitter-processing');
+    var twitterProcessor = require('twitter-processor');
     
-	var processing = twitterProcessing({
+	var processor = twitterProcessor.createProcessor({
 		'debug' : true,
-		'processor' : function(job,done) {
-			job.data.addedKey = 'value';
+		'processor' : function(tweet,done) {
+			tweet.addedKey = 'value';
 			done();
-		},
-		'redis' : {
-			'host' : 'localhost',
-			'post' : 6379,
-			'password' : ''
 		},
 		'twitter' : {
 			'consumer_key' : '',
@@ -36,6 +31,6 @@ Usage
 		}
 	});
 
-	processing.on('data',function(tweet) {
+	processor.on('data',function(tweet) {
 		console.log(tweet.addedKey); //value
 	});

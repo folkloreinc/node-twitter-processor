@@ -6,7 +6,7 @@
     "maintainers": [
         "David Mongeau-Petitpas <dmp@atelierfolklore.ca>"
     ],
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"dependencies": {
 		"ntwitter" : "0.5.x",
 		"queueleuleu" : "0.x"
