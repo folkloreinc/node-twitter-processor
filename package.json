@@ -1,24 +1,23 @@
 {
-	"name": "twitter-processing",
-	"description" : "Twitter streaming processing",
-    "keywords" : ["twitter", "streaming", "nwtitter"],
+	"name": "twitter-processor",
+	"description" : "Twitter streaming processor",
+    "keywords" : ["twitter", "streaming", "ntwitter", "text processor", "processor"],
     "author": "Folklore <info@atelierfolklore.ca>",
     "maintainers": [
         "David Mongeau-Petitpas <dmp@atelierfolklore.ca>"
     ],
-	"version": "0.0.5",
+	"version": "0.0.7",
 	"dependencies": {
-		"kue" : "0.5.x",
 		"ntwitter" : "0.5.x",
-		"redis" : "0.8.x"
+		"queueleuleu" : "0.x"
 	},
 	"main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git://github.com/Folkloreatelier/node-twitter-processing.git"
+        "url": "git://github.com/Folkloreatelier/node-twitter-processor.git"
     },
 	"license": {
 		"type": "MIT",
-		"url": "http://github.com/Folkloreatelier/node-twitter-processing/raw/master/LICENSE"
+		"url": "http://github.com/Folkloreatelier/node-twitter-processor/raw/master/LICENSE"
 	}
 }
