@@ -25,3 +25,18 @@ processor.on('tweet', function(tweet) {
 });
 
 processor.start();
+
+
+setTimeout(function() {
+
+    console.log('Stopped');
+    processor.stop();
+
+    setTimeout(function() {
+
+        console.log('Restart');
+        processor.start();
+
+    },10000);
+
+},10000);
