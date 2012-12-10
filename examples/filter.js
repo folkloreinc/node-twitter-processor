@@ -12,7 +12,7 @@ var processor = twitterProcessor.createProcessor({
     },
     'twitter' : CONFIG.twitter,
     'filter' : {
-        'track' : 'Bieber'
+        'track' : 'montreal'
     }
 });
 
@@ -22,6 +22,7 @@ processor.on('add', function(tweet) {
 
 processor.on('tweet', function(tweet) {
 	console.log('Tweet processed',tweet.text);
+    console.log('Queue length',this.queue.jobs.length);
 });
 
 processor.start();
