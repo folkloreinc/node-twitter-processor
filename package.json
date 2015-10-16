@@ -10,8 +10,7 @@
   ],
   "author": "Folklore <info@atelierfolklore.ca>",
   "contributors": [
-    "David Mongeau-Petitpas <dmp@atelierfolklore.ca>",
-    "François Côté <fc@atelierfolklore.ca>"
+    "David Mongeau-Petitpas <dmp@atelierfolklore.ca>"
   ],
   "version": "1.0",
   "dependencies": {
