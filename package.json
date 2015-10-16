@@ -12,7 +12,7 @@
   "contributors": [
     "David Mongeau-Petitpas <dmp@atelierfolklore.ca>"
   ],
-  "version": "1.0",
+  "version": "1.0.0",
   "dependencies": {
     "queueleuleu": "0.x",
     "twit": "^2.1.0"
